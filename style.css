@@ -1,0 +1,238 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    transition: 0.3s ease;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    cursor: default;
+}
+
+:root {
+    --main_color: #8400ff;
+    --secundary_color: #ffffff;
+    --bg_color: #000000;
+}
+
+body {
+    background-color: var(--bg_color);
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--bg_color);
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background-color: var(--main_color);
+    border: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 100px;
+    padding: 20px 50px;
+    background-color: var(--bg_color);
+    border-bottom: solid 2px var(--main_color);
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.nome span {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    word-spacing: 8px;
+    color: var(--main_color);
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 70px
+}
+
+.icons a {
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--secundary_color);
+    cursor: pointer;
+}
+
+.icons a:hover {
+    transform: scale(1.1);
+    color: var(--main_color);
+    border-bottom: solid 2px var(--main_color);
+}
+
+.container_sobre_mim {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 160px 360px 260px 360px;
+    gap: 140px;
+}
+
+.container_sobre_mim_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container_sobre_mim_title h1 {
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--secundary_color);
+    letter-spacing: 2px;
+}
+
+.container_sobre_mim_title h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--main_color);
+    letter-spacing: 2px;
+}
+
+.sobre_mim {
+    display: flex;
+    top: 0;
+    justify-items: center;
+    gap: 120px;
+}
+
+.img_perfil {
+    display: flex;
+    align-items: center;
+}
+
+.img_perfil img {
+    width: 320px;
+    border-radius: 50%;
+    border: solid 2px var(--main_color);
+    object-fit: cover;
+}
+
+.img_perfil img:hover {
+    transform: scale(1.05);
+}
+
+.sobre_mim_text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sobre_mim_text_title {
+    display: flex;
+    gap: 18px;
+}
+
+.sobre_mim_text_title h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    color: var(--secundary_color);
+}
+
+.sobre_mim_text_title h2 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    word-spacing: 6px;
+    color: var(--main_color);
+}
+
+.sobre_mim_text_info {
+    display: flex;
+}
+
+.sobre_mim_text_info p {
+    font-size: 18px;
+    color: var(--secundary_color);
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    word-spacing: 5px;
+    line-height: 60px;
+}
+
+.container_social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 420px 120px 420px;
+    gap: 140px;
+}
+
+.container_social_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.container_social_title h1 {
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--secundary_color);
+    letter-spacing: 2px;
+}
+
+.container_social_title h2 {
+    font-size: 46px;
+    font-weight: 700;
+    color: var(--main_color);
+    letter-spacing: 2px;
+}
+
+.container_redes_sociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 80px;
+}
+
+.redes_sociais {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    border-radius: 14px;
+    box-shadow: 0px 0px 20px 6px var(--main_color);
+}
+
+.redes_sociais:hover {
+    transform: scale(1.05);
+    background-color: #0c0018;
+}
+
+.redes_sociais span {
+    font-size: 22px;
+    color: var(--secundary_color);
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.redes_sociais img {
+    width: 50px;
+    cursor: pointer;
+}
